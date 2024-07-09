@@ -29,10 +29,13 @@
 
   )
 
-(use-package helm-ag
-  :ensure t)
+(use-package helm-ag :ensure t)
 
-(use-package helm-tramp
-  :ensure t)
+(use-package helm-tramp :ensure t)
+
+(use-package helm-projectile
+  :ensure t
+  :config
+  (helm-projectile-on))
 
 (provide 'init-helm)
