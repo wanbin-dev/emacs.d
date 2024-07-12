@@ -1,8 +1,8 @@
 (require 'package)
 
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")
-			 ("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-			   ("qinghua" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+ 			 ("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+ 			   ("qinghua" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 ;;(setq package-archives '(("gnu"   . "http://mirror.wanbin.tech/elpa/gnu/")
 ;;                         ("melpa" . "http://mirror.wanbin.tech/elpa/melpa/")))
 
@@ -34,5 +34,10 @@ re-downloaded in order to locate PACKAGE."
         (package-refresh-contents)
         (require-package package min-version t)))))
 
+;;; install use-package
+(require-package 'use-package)
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
 
-(provide 'init-elpa)
+
+(provide 'init-package)

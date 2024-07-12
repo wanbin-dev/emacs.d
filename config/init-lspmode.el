@@ -30,6 +30,8 @@
 	 (lsp-mode . lsp-enable-which-key-integration)
 	 (json-mode . lsp)
 	 (rust-mode . lsp))
+  :config
+  (setq lsp-csharp-csharpls-use-dotnet-tool nil)
   ;; for typescript/javascript
   ;; (setq lsp-typescript-auto-closing-tags t)
   ;; (setq lsp-typescript-format-enable t)
