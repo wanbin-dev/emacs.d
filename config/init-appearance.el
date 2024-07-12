@@ -22,9 +22,9 @@
 
 ;;; theme
 (add-subdirs-to-load-path "~/.emacs.d/config/themes")
-;; (require 'init-doom) ; use doom theme
-(require 'init-material-ocean)
-(load-theme 'material-ocean-dark t)
+(require 'init-doom) ; use doom theme
+;; (require 'init-material-ocean)
+;; (load-theme 'material-ocean-dark t)
 ; use dashboard
 (use-package dashboard
   :config

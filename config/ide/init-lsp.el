@@ -34,6 +34,8 @@
   ;; (setq lsp-typescript-auto-closing-tags t)
   ;; (setq lsp-typescript-format-enable t)
   ;; (setq lsp-javascript-auto-closing-tags t)
+  :config
+  (setq lsp-csharp-csharpls-use-dotnet-tool nil)
   
   :commands lsp
   :bind (
